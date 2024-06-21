@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>العقارات</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="home.html"> 🏡الصفحة الرئيسية</a></li>
+                <li class="nav-item"><a href="AboutUs.html">👥من نحن</a></li>
+                <li class="nav-item"><a href="Properties.html">🏢العقارات</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <br><br><br><br>
+        <h1>العقارات المتوفرة للإيجار</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>المدينة</th>
+                    <th>التفاصيل</th>
+                    <th>الإيجار الشهري</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>دمشق</td>
+                    <td>
+                            شقة 3 غرف وصالة مساحة 150 م²<br>
+                            <div class="details" style="display: none;">
+                            <strong>المنطقة:</strong> ركن الدين<br>
+                            <strong>الملكية:</strong> طابو أخضر<br>
+                            <strong>مرافق:</strong> لا يوجد<br>
+                            <strong>بلكون:</strong> مساحة 20 متر<br>
+                            <img src="images/home1.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home11.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home12.jpg" alt="صورة العقار" width="100">
+                        </div>
+                    </td>
+                    <td>3,000,000 ل.س</td>
+                    <td><input type="checkbox" class="toggle-details"></td>
+                    <td><input type="radio" name="property"></td>
+                </tr>
+                <tr>
+                    <td>ريف دمشق</td>
+                    <td>
+                            فيلا سكنية طابقين 4 غرف نوم 310 م²<br>
+                            <div class="details" style="display: none;">
+                            <strong>المنطقة:</strong> قرى الأسد<br>
+                            <strong>الملكية:</strong> طابو أخضر<br>
+                            <strong>مرافق:</strong> كراج<br>
+                            <strong>تراس:</strong> مساحة 30 متر<br>
+                            <img src="images/home2.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home21.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home22.jpg" alt="صورة العقار" width="100">
+                        </div>
+                    </td>
+                    <td>6,000,000 ل.س</td>
+                    <td><input type="checkbox" class="toggle-details"></td>
+                    <td><input type="radio" name="property"></td>
+                </tr>
+                <tr>
+                    <td>حلب</td>
+                    <td>
+                            شقة غرفتين وصالة مساحة 100 م²<br>
+                            <div class="details" style="display: none;">
+                            <strong>المنطقة:</strong> العزيزية<br>
+                            <strong>الملكية:</strong> طابو أخضر<br>
+                            <strong>مرافق:</strong> حديقة<br>
+                            <strong>بلكون:</strong> مساحة 12 متر<br>
+                            <img src="images/home3.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home31.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home32.jpg" alt="صورة العقار" width="100">
+                        </div>
+                    </td>
+                    <td>1,500,000 ل.س</td>
+                    <td><input type="checkbox" class="toggle-details"></td>
+                    <td><input type="radio" name="property"></td>
+                </tr>
+                <tr>
+                    <td>حمص</td>
+                    <td>
+                            بيت سكني مساحة 460 م²<br>
+                            <div class="details" style="display: none;">
+                            <strong>المنطقة:</strong> حي الانشاءات<br>
+                            <strong>الملكية:</strong> طابو أخضر<br>
+                            <strong>مرافق:</strong> كراج 4 سيارات<br>
+                            <strong>بلكون:</strong> لا يوجد<br>
+                            <img src="images/home4.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home41.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home42.jpg" alt="صورة العقار" width="100">
+                        </div>
+                    </td>
+                    <td>2,600,000 ل.س</td>
+                    <td><input type="checkbox" class="toggle-details"></td>
+                    <td><input type="radio" name="property"></td>
+                </tr>
+                <tr>
+                    <td>دمشق</td>
+                    <td>
+                            شقة غرفة وصالة مساحة 70 م²<br>
+                            <div class="details" style="display: none;">
+                            <strong>المنطقة:</strong> المالكي<br>
+                            <strong>الملكية:</strong> طابو أخضر<br>
+                            <strong>مرافق:</strong> حديقة خلفية<br>
+                            <strong>بلكون:</strong> مساحة 15 متر<br>
+                            <img src="images/home5.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home51.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home52.jpg" alt="صورة العقار" width="100">
+                        </div>
+                    </td>
+                    <td>2,000,000 ل.س</td>
+                    <td><input type="checkbox" class="toggle-details"></td>
+                    <td><input type="radio" name="property"></td>
+                </tr>
+                <tr>
+                    <td>ريف دمشق</td>
+                    <td>
+                            فيلا سكنية طابقين مساحة 640 م²<br>
+                            <div class="details" style="display: none;">
+                            <strong>المنطقة:</strong> يعفور<br>
+                            <strong>الملكية:</strong> طابو أخضر<br>
+                            <strong>مرافق:</strong> كراج ومسبح وحديقة<br>
+                            <strong>بلكون:</strong> مساحة 50 متر<br>
+                            <img src="images/home6.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home61.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home62.jpg" alt="صورة العقار" width="100">
+                        </div>
+                    </td>
+                    <td>19,000,000 ل.س</td>
+                    <td><input type="checkbox" class="toggle-details"></td>
+                    <td><input type="radio" name="property"></td>
+                </tr>
+                <tr>
+                    <td>حمص</td>
+                    <td>
+                            شقة 4 غرف وصالة مساحة 250 م²<br>
+                            <div class="details" style="display: none;">
+                            <strong>المنطقة:</strong> حي البياضة<br>
+                            <strong>الملكية:</strong> طابو أخضر<br>
+                            <strong>مرافق:</strong> لا يوجد<br>
+                            <strong>تراس:</strong> مساحة 12 متر عدد2<br>
+                            <img src="images/home7.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home71.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home72.jpg" alt="صورة العقار" width="100">
+                        </div>
+                    </td>
+                    <td>3,600,000 ل.س</td>
+                    <td><input type="checkbox" class="toggle-details"></td>
+                    <td><input type="radio" name="property"></td>
+                </tr>
+                <tr>
+                    <td>دمشق</td>
+                    <td>
+                            شقة غرفة وصالة مساحة 105 م²<br>
+                            <div class="details" style="display: none;">
+                            <strong>المنطقة:</strong> أبو رمانة<br>
+                            <strong>الملكية:</strong> طابو أخضر<br>
+                            <strong>مرافق:</strong> لا يوجد<br>
+                            <strong>بلكون:</strong> مساحة 12 متر<br>
+                            <img src="images/home8.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home81.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home82.jpg" alt="صورة العقار" width="100">
+                        </div>
+                    </td>
+                    <td>5,000,000 ل.س</td>
+                    <td><input type="checkbox" class="toggle-details"></td>
+                    <td><input type="radio" name="property"></td>
+                </tr>
+                <tr>
+                    <td>دمشق</td>
+                    <td>
+                            بيت سكني طابقين مساحة 340 م²<br>
+                            <div class="details" style="display: none;">
+                            <strong>المنطقة:</strong> ضاحية قدسيا<br>
+                            <strong>الملكية:</strong> حكم محكمة<br>
+                            <strong>مرافق:</strong> كراج<br>
+                            <strong>تراس:</strong> مساحة 40 متر<br>
+                            <img src="images/home9.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home91.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home92.jpg" alt="صورة العقار" width="100">
+                        </div>
+                    </td>
+                    <td>4,200,000 ل.س</td>
+                    <td><input type="checkbox" class="toggle-details"></td>
+                    <td><input type="radio" name="property"></td>
+                </tr>
+                <tr>
+                    <td>دمشق</td>
+                    <td>
+                            بيت سكني 6 غرف وصالة مساحة 430 م²<br>
+                            <div class="details" style="display: none;">
+                            <strong>المنطقة:</strong> مشروع دمر<br>
+                            <strong>الملكية:</strong> طابو أخضر<br>
+                            <strong>مرافق:</strong> كراج<br>
+                            <strong>بلكون:</strong> مساحة 45 متر<br>
+                            <img src="images/home10.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home101.jpg" alt="صورة العقار" width="100">
+                            <img src="images/home102.jpg" alt="صورة العقار" width="100">
+                        </div>
+                    </td>
+                    <td>7,500,000 ل.س</td>
+                    <td><input type="checkbox" class="toggle-details"></td>
+                    <td><input type="radio" name="property"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <button id="continueButton" class="btn btn-primary">متابعة</button>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="customerForm" onsubmit="return validateForm()">
+                    <label for="fullName">الاسم الكامل:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    
+                    <label for="nationalId">الرقم الوطني:</label>
+                    <input type="text" id="nationalId" name="nationalId" maxlength="11" required>
+                    
+                    <label for="birthDate">تاريخ الولادة:</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                    
+                    <label for="mobileNumber">رقم الموبايل:</label>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" maxlength="10" required>
+                    
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label id="equationLabel">حل المعادلة: </label>
+                    <input type="text" id="captcha" name="captcha" required>
+                    <button type="submit" id="submitButton">إرسال النموذج</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>شكراً لاستخدامك صفحتنا</footer>
+</body>
+</html>
