@@ -268,7 +268,7 @@ td {
     border-radius: 5px;
 }
 
-@media (max-width: 1530px) {
+@media (max-width: 1536px) {
     footer {
         position: relative; 
     }
